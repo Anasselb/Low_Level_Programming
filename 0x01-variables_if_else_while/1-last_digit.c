@@ -2,7 +2,7 @@
 
 /*
 exercice : The last digit 
-assign  a random degit then : 
+assign  a random digit to n then : 
 The output of the program should be:
 The string Last digit of, followed by
 n, followed by
