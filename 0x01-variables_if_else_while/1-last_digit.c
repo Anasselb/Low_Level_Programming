@@ -13,7 +13,6 @@ if the last digit of n is less than 6 and not 0: the string and is less than 6 a
 followed by a new line
 
 */
-
 int main()
 {
   
