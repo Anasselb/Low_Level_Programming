@@ -47,5 +47,6 @@ while (i <= 55)
    i++; 
    
 }
+   putchar('\n') ;
   return (0) ;
  } 
