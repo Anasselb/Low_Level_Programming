@@ -37,11 +37,19 @@ void times_table(void)
 
             if (ii != 9)
             {
-                if (mult_res < 10)
+                if (mult_res < 9)
                 {
-                    _putchar(',');
-                    _putchar(' ');
-                    _putchar(' ');
+                    if (mult_res + i > 9)
+                    {
+                        _putchar(',');
+                        _putchar(' ');
+                    }
+                    else
+                    {
+                        _putchar(',');
+                        _putchar(' ');
+                        _putchar(' ');
+                    }
                 }
                 else
                 {
@@ -55,4 +63,11 @@ void times_table(void)
         _putchar('\n');
         i++;
     }
+}
+
+int main(void)
+{
+
+    times_table();
+    return (0);
 }
