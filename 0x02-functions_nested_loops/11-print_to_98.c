@@ -19,17 +19,9 @@ void printdigits(int n)
 {
 
     int cnt, alias, array[10], i, j, res;
-    ;
     alias = n;
     cnt = 0;
-
-    while (n != 0)
-    {
-        n = n / 10;
-        cnt++;
-    }
     n = alias;
-
     if (n == 0)
     {
         _putchar(48);
@@ -44,6 +36,7 @@ void printdigits(int n)
     {
         array[i++] = n % 10;
         n = n / 10;
+        cnt++;
     }
 
     j = cnt - 1;
@@ -89,4 +82,14 @@ void print_to_98(int n)
         }
     }
     _putchar('\n');
+}
+
+int main(void)
+{
+    print_to_98(0);
+    print_to_98(98);
+    print_to_98(111);
+    print_to_98(81);
+    print_to_98(-10);
+    return (0);
 }
