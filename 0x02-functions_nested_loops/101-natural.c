@@ -43,12 +43,10 @@ void printnumber(int n)
     }
 }
 
-int i, x, y;
-long int result;
-
 int main(void)
 {
-
+    int i;
+    long int result;
     i = 0;
     result = 0;
     while (i <= 1024)
