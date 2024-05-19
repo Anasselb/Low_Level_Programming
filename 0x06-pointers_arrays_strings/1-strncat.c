@@ -15,23 +15,16 @@
 char *_strncat(char *dest, char *src, int n)
 {
     char *ptod = dest, *ptos = src;
-    int cnt = 0, cnts = 0;
-    int i = 1;
+    int cnt = 0, cnts = 0, i = 1;
 
     while (*dest++ != '\0' && *src++ != '\0')
     {
-        cnt++;
-        cnts++;
+        cnt++, cnts++;
     }
-
-    dest = ptod;
-    dest += cnt;
-    src = ptos;
+    dest = ptod, dest += cnt, src = ptos;
 
     if (n <= 0)
-    {
         return (0);
-    }
 
     while (i++ <= n)
     {
